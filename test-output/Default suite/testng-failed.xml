@@ -7,9 +7,10 @@
         <methods>
           <include name="openBrowser"/>
           <include name="loginToApp"/>
-          <include name="VerifyTitle"/>
+          <include name="AddToCart"/>
           <include name="closeBrowser"/>
           <include name="logoutFromApp"/>
+          <include name="removeCartItem"/>
         </methods>
       </class> <!-- Module1_Login_Test.SwagLoginTest -->
     </classes>

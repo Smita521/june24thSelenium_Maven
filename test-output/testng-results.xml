@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Verify Title]]>
@@ -7,61 +7,86 @@
     <line>
       <![CDATA[add to cart]]>
     </line>
+    <line>
+      <![CDATA[remove item from Cart]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-11-27T22:17:38 IST" name="Default suite" finished-at="2023-11-27T22:18:02 IST" duration-ms="23814">
+  <suite started-at="2023-11-27T22:54:45 IST" name="Default suite" finished-at="2023-11-27T22:55:38 IST" duration-ms="53447">
     <groups>
     </groups>
-    <test started-at="2023-11-27T22:17:38 IST" name="Default test" finished-at="2023-11-27T22:18:02 IST" duration-ms="23814">
+    <test started-at="2023-11-27T22:54:45 IST" name="Default test" finished-at="2023-11-27T22:55:38 IST" duration-ms="53447">
       <class name="Module1_Login_Test.SwagLoginTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:38 IST" name="openBrowser" finished-at="2023-11-27T22:17:41 IST" duration-ms="2936" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:54:45 IST" name="openBrowser" finished-at="2023-11-27T22:54:47 IST" duration-ms="2504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:41 IST" name="loginToApp" finished-at="2023-11-27T22:17:45 IST" duration-ms="4384" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:54:47 IST" name="loginToApp" finished-at="2023-11-27T22:54:52 IST" duration-ms="4937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="VerifyTitle()[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:45 IST" name="VerifyTitle" finished-at="2023-11-27T22:17:49 IST" duration-ms="3361" status="PASS">
+        <test-method signature="VerifyTitle()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:54:52 IST" name="VerifyTitle" finished-at="2023-11-27T22:54:55 IST" duration-ms="3061" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Verify Title]]>
             </line>
           </reporter-output>
         </test-method> <!-- VerifyTitle -->
-        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:49 IST" name="logoutFromApp" finished-at="2023-11-27T22:17:53 IST" duration-ms="4135" status="PASS">
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:54:55 IST" name="logoutFromApp" finished-at="2023-11-27T22:55:00 IST" duration-ms="4188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyTitle status=SUCCESS method=SwagLoginTest.VerifyTitle()[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5] output=Verify Title]]]>
+                <![CDATA[[TestResult name=VerifyTitle status=SUCCESS method=SwagLoginTest.VerifyTitle()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732] output=Verify Title]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:53 IST" name="loginToApp" finished-at="2023-11-27T22:17:57 IST" duration-ms="4285" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:00 IST" name="loginToApp" finished-at="2023-11-27T22:55:04 IST" duration-ms="4344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="AddToCart()[pri:1, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:57 IST" name="AddToCart" finished-at="2023-11-27T22:17:57 IST" duration-ms="66" status="PASS">
+        <test-method signature="AddToCart()[pri:1, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:04 IST" name="AddToCart" finished-at="2023-11-27T22:55:13 IST" duration-ms="9129" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[add to cart]]>
             </line>
           </reporter-output>
         </test-method> <!-- AddToCart -->
-        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:17:57 IST" name="logoutFromApp" finished-at="2023-11-27T22:18:01 IST" duration-ms="4186" status="PASS">
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:13 IST" name="logoutFromApp" finished-at="2023-11-27T22:55:17 IST" duration-ms="4137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddToCart status=SUCCESS method=SwagLoginTest.AddToCart()[pri:1, instance:Module1_Login_Test.SwagLoginTest@68e965f5] output=add to cart]]]>
+                <![CDATA[[TestResult name=AddToCart status=SUCCESS method=SwagLoginTest.AddToCart()[pri:1, instance:Module1_Login_Test.SwagLoginTest@6f27a732] output=add to cart]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module1_Login_Test.SwagLoginTest@68e965f5]" started-at="2023-11-27T22:18:01 IST" name="closeBrowser" finished-at="2023-11-27T22:18:02 IST" duration-ms="393" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:17 IST" name="loginToApp" finished-at="2023-11-27T22:55:22 IST" duration-ms="4275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="removeCartItem()[pri:2, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:22 IST" name="removeCartItem" finished-at="2023-11-27T22:55:34 IST" duration-ms="12197" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[remove item from Cart]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- removeCartItem -->
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:34 IST" name="logoutFromApp" finished-at="2023-11-27T22:55:38 IST" duration-ms="4180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeCartItem status=SUCCESS method=SwagLoginTest.removeCartItem()[pri:2, instance:Module1_Login_Test.SwagLoginTest@6f27a732] output=remove item from Cart]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module1_Login_Test.SwagLoginTest@6f27a732]" started-at="2023-11-27T22:55:38 IST" name="closeBrowser" finished-at="2023-11-27T22:55:38 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

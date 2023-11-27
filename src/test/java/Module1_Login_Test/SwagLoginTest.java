@@ -18,6 +18,7 @@ import Module1_login.SwagHomePage;
 import Module1_login.SwagLoginPage;
 import Module1_login.SwagMenuPage;
 import Module2_AddToCart.AddToCart;
+import Remove_ItemFromCart.RemoveItemFromCart;
 
 public class SwagLoginTest extends BaseClass {
 	
@@ -26,6 +27,8 @@ public class SwagLoginTest extends BaseClass {
 	SwagMenuPage out;
 	int TCID;
 	AddToCart addcart;
+	RemoveItemFromCart removeItemFromCart;
+	
 	
 	
 	@BeforeClass
@@ -35,6 +38,7 @@ public class SwagLoginTest extends BaseClass {
 		 home =new SwagHomePage(driver);
 		 out =new SwagMenuPage(driver);
 		 addcart=new AddToCart(driver);
+		 removeItemFromCart=new RemoveItemFromCart(driver);
 	}
 	
 	@BeforeMethod
@@ -61,12 +65,28 @@ public class SwagLoginTest extends BaseClass {
 	}
 	
 	@Test(priority = 1)
-	public void AddToCart() {
+	public void AddToCart() throws InterruptedException {
 		TCID=102;
 		Reporter.log("add to cart",true);
+		Thread.sleep(3000);
 		addcart.clickonAddToCart();
+		Thread.sleep(3000);
+		removeItemFromCart.RemoveItem();
+		Thread.sleep(3000);
 	}
 	
+	@Test(priority = 2)
+	public void removeCartItem() throws InterruptedException {
+		Thread.sleep(3000);
+		TCID=103;
+		addcart.clickonAddToCart();
+		Thread.sleep(3000);
+		removeItemFromCart.shopping_cart_link();
+		Reporter.log("remove item from Cart",true);
+		Thread.sleep(3000);
+		removeItemFromCart.RemoveItem();
+		Thread.sleep(3000);
+	}
 
 	
 	@AfterMethod
