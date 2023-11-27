@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\91935\AppData\Local\Temp\testng-eclipse--1154808625\testng-customsuite.xml</span>
+                    <span>C:\Users\91935\AppData\Local\Temp\testng-eclipse-237650269\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Module1_Login_Test.SwagLoginTest" class="method navigator-link" hash-for-method="AddToCart">AddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="Module1_Login_Test.SwagLoginTest" class="method navigator-link" hash-for-method="VerifyTitle">VerifyTitle</a> <!-- method navigator-link -->
@@ -126,6 +131,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="AddToCart">
+                  </a> <!-- AddToCart -->
+                  <span class="method-name">AddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="VerifyTitle">
                   </a> <!-- VerifyTitle -->
                   <span class="method-name">VerifyTitle</span>
@@ -136,7 +148,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91935\AppData\Local\Temp\testng-eclipse--1154808625\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\91935\AppData\Local\Temp\testng-eclipse-237650269\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,11 +197,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyTitle')
 data.setCell(0, 2, 'Module1_Login_Test.SwagLoginTest')
-data.setCell(0, 3, 3970);
+data.setCell(0, 3, 3361);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddToCart')
+data.setCell(1, 2, 'Module1_Login_Test.SwagLoginTest')
+data.setCell(1, 3, 66);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -205,6 +221,18 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddToCart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">add to cart</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyTitle</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verify Title</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -227,19 +255,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">4406 ms</span>
+                <span class="method-start">2950 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyTitle</span>
-                <span class="method-start">8769 ms</span>
+                <span class="method-start">7334 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromApp([TestResult name=VerifyTitle status=SUCCESS method=SwagLoginTest.VerifyTitle()[pri:0, instance:Modul...)</span>
-                <span class="method-start">12744 ms</span>
+                <span class="method-start">10701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp</span>
+                <span class="method-start">14845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddToCart</span>
+                <span class="method-start">19130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp([TestResult name=AddToCart status=SUCCESS method=SwagLoginTest.AddToCart()[pri:1, instance:Module1_L...)</span>
+                <span class="method-start">19207 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">17160 ms</span>
+                <span class="method-start">23398 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

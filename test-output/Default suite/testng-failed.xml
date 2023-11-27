@@ -7,6 +7,7 @@
         <methods>
           <include name="openBrowser"/>
           <include name="loginToApp"/>
+          <include name="VerifyTitle"/>
           <include name="closeBrowser"/>
           <include name="logoutFromApp"/>
         </methods>

@@ -56,7 +56,14 @@ public class SwagLoginTest extends BaseClass {
 		String verifTitle = UtilityClass.getTD(0, 2);
 		//String verifTitle = UtilityClass.getTD(0, 1);
 		Assert.assertEquals(actTitle,verifTitle,"Failed: both results are failed"); 
+		Reporter.log("Verify Title",true);
 		Thread.sleep(2000);
+	}
+	
+	@Test(priority = 1)
+	public void AddToCart() {
+		TCID=102;
+		Reporter.log("add to cart",true);
 		addcart.clickonAddToCart();
 	}
 	
@@ -74,7 +81,6 @@ public class SwagLoginTest extends BaseClass {
 		out.Logoutbtn();
 		Thread.sleep(2000);
 		System.out.println("User logout sucessfully");
-		driver.close();
 	}
 	@AfterClass
 	public void closeBrowser()
