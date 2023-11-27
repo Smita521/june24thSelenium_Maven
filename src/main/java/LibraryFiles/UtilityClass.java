@@ -20,7 +20,7 @@ public class UtilityClass {
 	//need to pass 2 inputs 1:rowIndex 2:colIndex
 	public static String getTD(int rowIndex,int colIndex) throws EncryptedDocumentException, IOException
 	{
-	FileInputStream file=new FileInputStream("C:\\Users\\91997\\eclipse-workspace\\june24thSelenium_Maven\\TestData\\June24.xlsx");
+	FileInputStream file=new FileInputStream("C:\\Users\\91935\\git\\june24thSelenium_Maven\\TestData\\June24.xlsx");
 	Sheet sh = WorkbookFactory.create(file).getSheet("DDF");
 	String value = sh.getRow(rowIndex).getCell(colIndex).getStringCellValue();
 	return value;
@@ -29,7 +29,7 @@ public class UtilityClass {
 	public static void captureSS(WebDriver driver,int TCID) throws IOException
 	{
 	File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	File dest=new File("C:\\Users\\91997\\eclipse-workspace\\june24thSelenium_Maven\\Screenshots\\"+TCID+"TestCaseID.jpg");
+	File dest=new File("C:\\Users\\91935\\git\\june24thSelenium_Maven\\Screenshots\\"+TCID+"TestCaseID.jpg");
 	FileHandler.copy(src, dest);
 	}
 	
@@ -38,7 +38,7 @@ public class UtilityClass {
 	
 	//FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\PropertyFile.properties");
 	//FileInputStream file=new FileInputStream("C:\\Users\\91997\\eclipse-workspace\\june24thSelenium\\src\\POM_DDF_TestNG_BaseClass_UtilityClass_FailedTCesSS_PropertyFile\\PropertyFile.properties");
-	FileInputStream file=new FileInputStream("C:\\Users\\91997\\eclipse-workspace\\june24thSelenium_Maven\\PropertyFile\\PropertyFile.properties");
+	FileInputStream file=new FileInputStream("C:\\Users\\91935\\git\\june24thSelenium_Maven\\PropertyFile\\PropertyFile.properties");
 	Properties p=new Properties();
 	p.load(file);
 	String value = p.getProperty(key);

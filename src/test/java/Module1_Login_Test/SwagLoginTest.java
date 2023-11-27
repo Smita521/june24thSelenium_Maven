@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -16,6 +17,7 @@ import LibraryFiles.UtilityClass;
 import Module1_login.SwagHomePage;
 import Module1_login.SwagLoginPage;
 import Module1_login.SwagMenuPage;
+import Module2_AddToCart.AddToCart;
 
 public class SwagLoginTest extends BaseClass {
 	
@@ -23,6 +25,7 @@ public class SwagLoginTest extends BaseClass {
 	SwagHomePage home;
 	SwagMenuPage out;
 	int TCID;
+	AddToCart addcart;
 	
 	
 	@BeforeClass
@@ -31,6 +34,7 @@ public class SwagLoginTest extends BaseClass {
 		 login= new SwagLoginPage(driver);
 		 home =new SwagHomePage(driver);
 		 out =new SwagMenuPage(driver);
+		 addcart=new AddToCart(driver);
 	}
 	
 	@BeforeMethod
@@ -51,10 +55,12 @@ public class SwagLoginTest extends BaseClass {
 		String actTitle=home.getSwagLabHomePageTitle();
 		String verifTitle = UtilityClass.getTD(0, 2);
 		//String verifTitle = UtilityClass.getTD(0, 1);
-		Assert.assertEquals(actTitle,verifTitle,"Failed: both results are failed");
-		
+		Assert.assertEquals(actTitle,verifTitle,"Failed: both results are failed"); 
 		Thread.sleep(2000);
+		addcart.clickonAddToCart();
 	}
+	
+
 	
 	@AfterMethod
 	public void logoutFromApp(ITestResult s1) throws InterruptedException, IOException{
